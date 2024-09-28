@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/837be0c474.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="video.css">
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <title>Atay Yapı | Galeri</title>
+</head>
+
+<body>
+  <div class="bg-red-600 flex items-center justify-center w-12/12">
+    <a href="index.html" class="flex justify-center items-center">
+      <h1 id="op" class="text-sm md:text-lg font-bold tracking-wide text-white flex justify-center items-center">
+        <span>Güncel Projelere Göz Atın. Ne Yapıyoruz</span><i class="ml-1 fa-solid fa-arrow-right"></i></h1>
+    </a>
+  </div>
+  <header class="header bg-gray-50" id="header">
+    <div class="bg-gray-800 flex flex-col">
+      <div class="bg-gray-50 h-10 flex justify-center items-center md:px-5">
+        <div class="hidden md:flex justify-center items-center gap-3 mr-auto">
+          <li><a href="https://wa.me/905306871665"><i class="text-green-600 md:inline hidden text-xl fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="text-red-600 md:inline hidden text-xl fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="text-gray-600 md:inline hidden text-xl fa-brands fa-x-twitter"></i></a></li>
+        </div>
+        <div class="text-xs md:text-base flex justify-center items-center md:gap-5">
+          <li><a
+              class="flex justify-center items-center gap-1 hover:bg-green-500 hover:text-green-50 p-2 px-3 md:rounded-none rounded-full text-gray-700"
+              href="mailto:ozkanatay296@gmail.com">
+              <i class="fa-regular fa-envelope"></i> ozkanatay296@gmail.com</a></li>
+          <li><a
+              class="flex justify-center items-center gap-1 hover:bg-green-500 hover:text-green-50 p-2 px-3 md:rounded-none rounded-full text-gray-700"
+              href="tel:+905458432288">
+              <i class="fa-solid fa-phone"></i> +90 530 687 16 65</a></li>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar container py-12">
+      <section class="navbar__left">
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+      </section>
+      <section class="navbar__center">
+        <span class="overlay"></span>
+        <div class="menu" id="menu">
+          <div class="menu__header">
+            <span class="menu__arrow"><i class="bx bx-chevron-left"></i></span>
+            <span class="menu__title"></span>
+          </div>
+          <ul class="menu__inner">
+            <li class="menu__item"><a href="../index.html" class="menu__link">Anasayfa</a></li>
+            <li class="menu__item menu__dropdown">
+              <a href="#" class="menu__link">
+                Hizmetlerimiz
+                <i class="bx bx-chevron-right"></i>
+              </a>
+              <div class="submenu megamenu__text ">
+                <div class="submenu__inner">
+                  <h4 class="submenu__title">
+                    <a class="flex items-center justify-center font-bold" href="#">İç Cephe</a>
+                  </h4>
+                  <ul class="submenu__list">
+                    <li><a>Alçı sıva</a></li>
+                    <li><a>Saten</a></li>
+                    <li><a>Boya</a></li>
+                    <li><a>Asma tavan</a></li>
+                    <li><a>Alçıpan</a></li>
+                    <li><a>Ahşap boyama</a></li>
+                  </ul>
+                </div>
+              
+                <div class="submenu__inner">
+                  <h4 class="submenu__title">
+                    <a class="flex items-center justify-center font-bold" href="#">Dış Cephe</a>
+                  </h4>
+                  <ul class="submenu__list">
+                    <li><a>Kara sıva</a></li>
+                    <li><a>Hazır sıva</a></li>
+                    <li><a>Dekoratif</a></li>
+                    <li><a>Fileli sıva</a></li>
+                    <li><a>Mantolama</a></li>
+                    <li><a>Boya</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+            </li>
+            <li class="menu__item"><a href="./index.html" class="menu__link">Galeri</a></li>
+            <li class="menu__item"><a href="../iletisim/" class="menu__link">İletişim</a></li>
+
+            <a href="#"
+              class="md:hidden flex justify-center items-center gap-2 absolute bottom-0 py-6 gap-6 w-full text-sm font-bold bg-red-700 text-gray-100">
+              <span>Hemen Ara</span>
+              <i class="md:hidden fa-solid fa-phone"></i>
+            </a>
+
+            <div class="md:hidden flex justify-center items-center absolute bottom-20 gap-6 w-full">
+              <li><a href="#"><i class="text-green-600 md:hidden block text-3xl  fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="#"><i class="text-red-600 md:hidden block text-3xl fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="text-gray-600 md:hidden block text-3xl fa-brands fa-x-twitter"></i></a></li>
+            </div>
+          </ul>
+      </section>
+      <section class="navbar__right">
+        <label for="search" href="#"
+          class="hidden text-gray-900 bg-gray-100 hover:bg-gray-200 py-3 px-4 text-gray-100 rounded-lg font-bold absolute w-11/12 top-20 left-2 md:w-96 md:top-auto md:left-10">
+          <input class="w-full search md:pr-16" type="search" placeholder="Arama" name="" id="search"></label>
+        <a href="../index.html" class="brand flex items-center justify-center">
+          <img
+            src="../logo.png"  style="transform: scale(1.6);" class="md:absolute text-6xl font-bold top-20 left-5 md:top-auto md:left-14 h-12 md:h-14 flex items-center justify-center">
+            </img>
+        </a>
+      </section>
+    </nav>
+  </header>
+
+  <article class="px-3 md:px-5 md:w-11/12 mx-auto relative top-5">
+
+
+    <!-- Video sayfa açılış  -->
+    <!-- <div class="w-full flex items-center justify-center md:gap-10 gap-4 mx-auto" style="width: 100%; height: 85vh;">
+      <div style="z-index: 1;" class="video-container absolute">
+        <video id="myVideo" loop autoplay muted class="h-full rounded" style="width: 1100px;">
+          <source src="videp.mp4" type="video/mp4">
+        </video>
+      </div>
+      <a style="z-index: 3;"
+        class="bg-red-600 text-white shadow-2xl py-3 px-5 text-lg font-bold rounded-sm hover:bg-white hover:text-red-600"
+        href="#">İç
+        Cephe Çalışmalarımız <i class="fa-solid fa-arrow-down"></i></a>
+      <a style="z-index: 3;"
+        class="bg-red-600 text-white shadow-2xl py-3 px-5 text-lg font-bold rounded-sm hover:bg-white hover:text-red-600"
+        href="#">Dış
+        Cephe Çalışmalarımız <i class="fa-solid fa-arrow-down"></i></a>
+      <script>
+        // Video elementini seçin
+        var eles = document.getElementById("myVideo");
+
+        eles.playbackRate = 6;
+      </script>
+    </div> -->
+
+  
+
+    <script>
+      // butun card lara class ekleıtılıyo bu kodda
+      document.addEventListener("DOMContentLoaded", function () {
+        var cards = document.querySelectorAll('.card'); // Tüm card sınıfı taşıyan öğeleri seç
+
+        cards.forEach(function (card) { // Her bir card öğesi için
+          card.classList.add('wow', 'animate__animated', 'animate__zoomIn'); // İlgili sınıfları ekle
+        });
+      });
+   </script>
+
+   
+    
+<div>
+
+  <div class="pt-14" id="ic-cephe">
+
+
+    <h2 id="calisma-baslik" class="font-bold text-gray-800  p-2 rounded">İç Cephe Çalışmalarımız</h2>
+    <main class="main flex md:flex-row flex-col md:container mx-auto py-10 pb-40">
+      <div class="flex flex-wrap justify-center items-center w-full mx-auto gap-6">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/ix3hiw7.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/ix3hiw7.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/t1rjumz.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/t1rjumz.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/6feha1e.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/6feha1e.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/jww6vg3.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/jww6vg3.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/248hacv.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/248hacv.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/mjrpszs.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/mjrpszs.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/5a6voew.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/5a6voew.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/o40kfmw.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/o40kfmw.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+  <div class="my-1 pt-52" id="dis-cephe">
+    <h2 id="calisma-baslik" class="font-bold text-gray-800  p-2 rounded">Dış Cephe Çalışmalarımız</h2>
+    <main class="main flex md:flex-row flex-col md:container mx-auto py-10 pb-40">
+      <div class="flex flex-wrap justify-center items-center w-full mx-auto gap-6">
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/elgeoh2.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/elgeoh2.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/rst27ri.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/rst27ri.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/mj6u188.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/mj6u188.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/i5065t4.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/i5065t4.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/tgvoh3u.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/tgvoh3u.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/f7qd0mp.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/f7qd0mp.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/b9gc7xm.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/b9gc7xm.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <a href="https://i.hizliresim.com/eulcdwp.jpeg" data-fancybox="gallery"
+              data-caption="Örnek Açıklama Yazılması için alan">
+              <img src="https://i.hizliresim.com/eulcdwp.jpeg" alt="Image Gallery">
+            </a>
+          </div>
+        </div>
+    </main>
+  </div>
+
+  
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </article>
+
+
+
+  <footer>
+    <div id="footer" class="bg-gray-800 text-white w-full flex p-10  pt-14 gap-4 md:flex-row flex-col">
+      <a href="../index.html" class="tracking-wide md:w-4/12 text-4xl text-center font-bold flex flex-col justify-center items-center">
+        <img class="w-40" src="../logo-2.png" alt="logo" title="Atay Yapı">
+        <h1 class="text-xs font-bold">25
+          Yıldan bu güne <br> Daima ileri!</h1>
+        </a>
+
+      <div class="md:w-3/12 md:pr-8">
+        <h1 class="text-3xl font-bold">Biz Kimiz?</h1>
+        <span>
+          Atay Yapı, inşaat sektöründe uzun yıllardır öncü bir konumda bulunuyor. Kaliteli hizmet anlayışı ve deneyimli
+          ekibi sayesinde müşterilerine güven veriyor. Özellikle iç ve dış cephe tamiratlarında uzmanlaşmış olup,
+          estetik ve dayanıklılığı bir arada sağlayarak müşterilerine çözümler sunuyor.</span> </div>
+      <div class="md:w-3/12">
+        <h1 class="text-3xl font-bold">Hızlı Bağlantılar</h1>
+        <li class="hover:text-red-600 text-gray-400"><a href="index.html">Galeri <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"></i></li></a>
+        <li class="hover:text-red-600 text-gray-400"><a href="../iletisim/">İletişim <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"></i></li></a>
+      </div>
+      <div class="md:w-3/12 md:ml-4">
+        <h1 class="text-3xl font-bold">İletişim</h1>
+        <li class="hover:text-red-600 text-gray-400"><a href="tel:+905306871665"><i class="fa-solid fa-phone"></i>
+          +90 530 687 16 65 <i class="fa-solid fa-arrow-up-right-from-square text-xs"> </i></li></a>
+        <li class="text-gray-400 ">
+        <li class="hover:text-red-600 text-gray-400"><a href="mailto:ozkanatay296@gmail.com"><i
+              class="fa-regular fa-envelope"></i>
+              ozkanatay296@gmail.com <i class="fa-solid fa-arrow-up-right-from-square text-xs"> </i></li></a>
+        <li class="text-gray-400 ">
+
+
+          <a href="#">
+            <h2 class="font-bold text-xl">Adres ve Kapsam </h2>
+        <li><a href="#">Kocaeli/İzmit</a>
+        <li><a href="#">Kocaeli/Gölcük</a>
+        </li></a>
+
+        <div class="flex mt-4 gap-4">
+          <li><a href="https://wa.me/905306871665"><i class="text-green-600 md:inline hidden md:text-3xl fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="text-red-600 md:inline hidden md:text-3xl fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="text-gray-300 md:inline hidden md:text-3xl fa-brands fa-x-twitter"></i></a></li>
+        </div>
+      </div>
+      <a href="https://wa.me/905306871665">
+        <span
+          class="md:inline hidden fixed bottom-9 right-24 bg-gray-50 text-gray-900 p-1 px-2 rounded-full shadow-inner shadow-2xl animate__animated animate__backInRight animate__delay-3s wow">Size
+          Nasıl Yardımcı olabiliriz?</span>
+        <img class="w-14 fixed bottom-6 right-8  rounded bg-cover bg-center shadow-xl hover:shadow-inner"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-512.png"
+          alt="">
+      </a>
+      <a class="fixed bottom-8 left-8 flex items-center justify-center bg-red-700 h-12 w-12 rounded-full shadow-2xl"
+        style="box-shadow: 0px 0px 50px rgb(53, 52, 52);" href="#top"><i class="fa-solid fa-arrow-up text-2xl"></i> </a>
+
+    </div>
+
+    <div
+      class="md:pb-0 pb-20 pt-20 bg-gray-800 flex items-center justify-center text-gray-400 p-1 py-3 text-sm font-bold text-center">
+      Copyright © Atay Yapı ve İnşaat 2024. Tüm hakları saklıdır.</div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new WOW().init(); // Wow.js'i başlat
+    });
+
+  </script>
+
+</body>
+<script>
+  // DOM elemanlarını seçme
+  const menu = document.querySelector(".menu");
+  const menuInner = menu.querySelector(".menu__inner");
+  const menuArrow = menu.querySelector(".menu__arrow");
+  const menuTitle = menu.querySelector(".menu__title");
+  const burger = document.querySelector(".burger");
+  const overlay = document.querySelector(".overlay");
+
+  // Navbar Menüsünü Açma/Kapatma Fonksiyonu
+  function toggleMenu() {
+    // "is-active" sınıfını ekleyerek veya kaldırarak menüyü ve örtüyü gösterme/gizleme
+    menu.classList.toggle("is-active");
+    overlay.classList.toggle("is-active");
+  }
+
+  // Mobil Alt Menüyü Gösterme Fonksiyonu
+  function showSubMenu(children) {
+    // Alt menüyü seçme ve animasyon için sınıfları ekleme
+    const subMenu = children.querySelector(".submenu");
+    subMenu.classList.add("is-active");
+    subMenu.style.animation = "slideLeft 0.35s ease forwards";
+
+    // Alt menü içeriğine göre menü başlığını güncelleme
+    const menuTitleContent = children.querySelector("i").parentNode.childNodes[0].textContent;
+    menu.querySelector(".menu__title").textContent = menuTitleContent;
+    menu.querySelector(".menu__header").classList.add("is-active");
+  }
+
+  // Mobil Alt Menüyü Gizleme Fonksiyonu
+  function hideSubMenu() {
+    // Animasyonla alt menüyü gizleme ve sınıfları kaldırma
+    const subMenu = menu.querySelector(".submenu");
+    subMenu.style.animation = "slideRight 0.35s ease forwards";
+    setTimeout(() => {
+      subMenu.classList.remove("is-active");
+    }, 300);
+
+    // Menü başlığını sıfırlama ve ek sınıfları kaldırma
+    menu.querySelector(".menu__title").textContent = "";
+    menu.querySelector(".menu__header").classList.remove("is-active");
+  }
+
+  // Mobil Alt Menüyü Açma/Kapatma Fonksiyonu
+  function toggleSubMenu(e) {
+    // Alt menüyü işlemeden önce menünün aktif olup olmadığını kontrol etme
+    if (!menu.classList.contains("is-active")) {
+      return;
+    }
+
+    // Tıklanan öğenin alt menü açılır menü içinde olup olmadığını kontrol etme
+    if (e.target.closest(".menu__dropdown")) {
+      const children = e.target.closest(".menu__dropdown");
+      showSubMenu(children);
+    }
+  }
+
+
+
+  // Tüm Olay Dinleyicilerini Başlatma
+  // Menü, örtü, alt menü oku, menü başlığı ve iç menü tıklamaları için olay dinleyicilerini eklemek
+  burger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+  menuArrow.addEventListener("click", hideSubMenu);
+  menuTitle.addEventListener("click", hideSubMenu);
+  menuInner.addEventListener("click", toggleSubMenu);
+
+</script>
+<script src="wow.min.js"></script>
+<script>
+  new WOW().init();
+  wow = new WOW(
+    {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }
+  )
+  wow.init();
+</script>
+
+</html>
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

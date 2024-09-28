@@ -1,0 +1,50 @@
+.main .card {
+    width: 500px;
+    color: #252a32;
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+}
+
+@media only screen and (min-width: 700px) {
+    .main .card {
+        width: 320px;
+    }
+
+}
+
+.main .card-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 70%;
+    background: #fff;
+}
+
+
+.main .card-image img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+#calisma-baslik{
+    box-shadow: inset 5px 0 rgb(197, 0, 0);
+    padding: 0 10px;
+    border-radius: 0;
+}
+#btn i{
+    transform: rotate(-90deg);
+}
+#btn:hover i{
+    transform: rotate(0deg);
+    transform: scale(1.3);
+}
+#btn:hover{
+    transform: scale(1.1);
+}

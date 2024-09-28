@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/837be0c474.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tailwind.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/512/14644/14644979.png?uid=R99649802&"
+    type="image/x-icon">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <title>Atay Yapı | Anasayfa </title>
+</head>
+
+<body class="text-justify">
+  <div class=" bg-red-600 flex items-center justify-center w-12/12">
+    <a href="../galeri/" class="flex justify-center items-center">
+      <h1 id="op" class="text-sm md:text-lg font-bold tracking-wide text-white flex justify-center items-center">
+        <span>Güncel Projelere Göz Atın. Ne Yapıyoruz</span><i class="ml-1 fa-solid fa-arrow-right"></i>
+      </h1>
+    </a>
+  </div>
+  <header class="header bg-gray-50" id="header">
+    <div class="bg-gray-800 flex flex-col">
+      <div class="bg-gray-50 h-10 flex justify-center items-center md:px-5">
+        <div class="hidden md:flex justify-center items-center gap-3 mr-auto">
+          <li><a href="https://wa.me/905306871665"><i class="text-green-600 md:inline hidden text-xl fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="text-red-600 md:inline hidden text-xl fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="text-gray-600 md:inline hidden text-xl fa-brands fa-x-twitter"></i></a></li>
+        </div>
+        <div class="text-xs md:text-base flex justify-center items-center md:gap-5">
+          <li><a
+              class="flex justify-center items-center gap-1 hover:bg-green-500 hover:text-green-50 p-2 px-3 md:rounded-none rounded-full text-gray-700"
+              href="mailto:ozkanatay296@gmail.com">
+              <i class="fa-regular fa-envelope"></i> ozkanatay296@gmail.com</a></li>
+          <li><a
+              class="flex justify-center items-center gap-1 hover:bg-green-500 hover:text-green-50 p-2 px-3 md:rounded-none rounded-full text-gray-700"
+              href="tel:+905306871665">
+              <i class="fa-solid fa-phone"></i> +90 530 687 16 65</a></li>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar container py-12">
+      <section class="navbar__left">
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+      </section>
+      <section class="navbar__center">
+        <span class="overlay"></span>
+        <div class="menu" id="menu">
+          <div class="menu__header">
+            <span class="menu__arrow"><i class="bx bx-chevron-left"></i></span>
+            <span class="menu__title"></span>
+          </div>
+          <ul class="menu__inner">
+            <li class="menu__item"><a href="index.html" class="menu__link">Anasayfa</a></li>
+            <li class="menu__item menu__dropdown">
+              <a href="#" class="menu__link">
+                Hizmetlerimiz
+                <i class="bx bx-chevron-right"></i>
+              </a>
+              
+              <div class="submenu megamenu__text ">
+                <div class="submenu__inner">
+                  <h4 class="submenu__title">
+                    <a class="flex items-center justify-center font-bold" href="#">İç Cephe</a>
+                  </h4>
+                  <ul class="submenu__list">
+                    <li><a>Alçı sıva</a></li>
+                    <li><a>Saten</a></li>
+                    <li><a>Boya</a></li>
+                    <li><a>Asma tavan</a></li>
+                    <li><a>Alçıpan</a></li>
+                    <li><a>Ahşap boyama</a></li>
+                  </ul>
+                </div>
+              
+                <div class="submenu__inner">
+                  <h4 class="submenu__title">
+                    <a class="flex items-center justify-center font-bold" href="#">Dış Cephe</a>
+                  </h4>
+                  <ul class="submenu__list">
+                    <li><a>Kara sıva</a></li>
+                    <li><a>Hazır sıva</a></li>
+                    <li><a>Dekoratif</a></li>
+                    <li><a>Fileli sıva</a></li>
+                    <li><a>Mantolama</a></li>
+                    <li><a>Boya</a></li>
+                  </ul>
+                </div>
+              </div>
+              
+            </li>
+            <li class="menu__item"><a href="./galeri/" class="menu__link">Galeri</a></li>
+            <li class="menu__item"><a href="./iletisim/" class="menu__link">İletişim</a></li>
+
+            <a href="#"
+              class="md:hidden flex justify-center items-center gap-2 absolute bottom-0 py-6 gap-6 w-full text-sm font-bold bg-red-700 text-gray-100">
+              <span>Hemen Ara</span>
+              <i class="md:hidden fa-solid fa-phone"></i>
+            </a>
+
+            <div class="md:hidden flex justify-center items-center absolute bottom-20 gap-6 w-full">
+              <li><a href="#"><i class="text-green-600 md:hidden block text-3xl  fa-brands fa-whatsapp"></i></a></li>
+              <li><a href="#"><i class="text-red-600 md:hidden block text-3xl fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="text-gray-600 md:hidden block text-3xl fa-brands fa-x-twitter"></i></a></li>
+            </div>
+          </ul>
+      </section>
+      <section class="navbar__right">
+        <label for="search" href="#"
+          class="hidden text-gray-900 bg-gray-100 hover:bg-gray-200 py-3 px-4 text-gray-100 rounded-lg font-bold absolute w-11/12 top-20 left-2 md:w-96 md:top-auto md:left-10">
+          <input class="w-full search md:pr-16" type="search" placeholder="Arama" name="" id="search"></label>
+        <a href="index.html" class="brand flex items-center justify-center">
+          <img src="../logo.png" style="transform: scale(1.6);"
+            class="md:absolute py-1 text-6xl font-bold top-20 left-5 md:top-auto md:left-14 h-12 md:h-14 flex items-center justify-center">
+          </img>
+        </a>
+      </section>
+    </nav>
+  </header>
+  <article class="pt-1">
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new WOW().init(); // Wow.js'i başlat
+      });
+
+    </script>
+
+
+
+
+    <!--Slider alanı başlangıç-->
+    <div>
+
+      <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+
+      <div x-data="slider"
+        class="container md:rounded-lg relative mt-1 md:mt-5 shadow-3xl flex flex-shrink-0 overflow-hidden"
+        style="height: 70vh; width: 100%; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+        <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
+          <span x-text="currentIndex"></span> /
+          <span x-text="images.length"></span>
+        </div>
+
+        <template x-for="(image, index) in images">
+          <figure class="h-96" x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
+            x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+            x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0">
+            <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full opacity-80" />
+           
+                 <!-- <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
+                  Any kind of content here!
+                  Primum in nostrane potestate est, quid meminerimus? Nulla erit controversia. Vestri haec verecundius, illi fortasse constantius. 
+              </figcaption> -->
+          </figure>
+        </template>
+
+        <button @click="back()"
+          class="absolute left-4 md:left-14 top-1/2 -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+          <svg
+            class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:-translate-x-0.5"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
+            </path>
+          </svg>
+        </button>
+
+        <button @click="next()"
+          class="absolute right-4 md:right-14 top-1/2 translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
+          <svg
+            class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 hover:translate-x-0.5"
+            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <script>
+        document.addEventListener('alpine:init', () => {
+          Alpine.data('slider', () => ({
+            currentIndex: 1,
+            images: [
+              'https://i.hizliresim.com/gx165cf.jpeg',
+              'https://i.hizliresim.com/9z88f0u.jpeg',
+              'https://i.hizliresim.com/28zrmyl.jpeg',
+              'https://i.hizliresim.com/fntid8n.jpeg',
+              'https://i.hizliresim.com/p9lm286.jpg',
+              'https://i.hizliresim.com/qneja3k.jpg',
+              'https://i.hizliresim.com/ofp5qdg.jpg',
+              'https://i.hizliresim.com/8x852m1.jpg',
+              'https://i.hizliresim.com/q0ye92z.jpg',
+              'https://i.hizliresim.com/cllz8c0.jpg',
+              '',
+            ],
+            back() {
+              if (this.currentIndex > 1) {
+                this.currentIndex = this.currentIndex - 1;
+              }
+            },
+            next() {
+              if (this.currentIndex < this.images.length) {
+                this.currentIndex = this.currentIndex + 1;
+              } else if (this.currentIndex <= this.images.length) {
+                this.currentIndex = this.images.length - this.currentIndex + 1
+              }
+            },
+          }))
+        })
+      </script>
+
+    </div>
+    <!--Slider alanı biriş-->
+
+
+    <div class="p-7 md:p-10 md:px-12 px-5 text-gray-700 container">
+      <h1 class="animate__animated animate__fadeInUp wow text-4xl font-bold">Biz kimiz <i
+          class="fa-solid fa-question text-4xl shadow-2xl"></i></h1>
+      <h4 class="animate__animated animate__fadeInUp wow">
+        Atay Yapı, uzun süreli hizmetiyle inşaat sektöründe iz bırakan bir başarı hikayesi yazıyor. Deneyimli ekibi ve
+        80’den fazla tamamlanan projesiyle, şirket kaliteli hizmet anlayışını müşterilerine sunmaya devam ediyor. İç
+        cephe ve dış cephe tamiratlarında uzmanlaşmış olan Atay Yapı, estetik ve dayanıklılığı bir araya getirerek
+        müşterilerine çözümler sunuyor. Yüksek kalitedeki işçilikleri ve kullanılan malzemelerdeki özen, müşteri
+        memnuniyetini ön planda tutuyor. Müşteri memnuniyeti, zamanında teslimat ve proje yönetimi konularına odaklanan
+        şirket, güvenilirliği ile tanınıyor. Geçmişteki başarılarıyla sektörde kendine sağlam bir yer edinen Atay Yapı,
+        gelecekteki projeleri ve stratejileriyle de dikkat çekiyor. Sektöre değer katan bu başarılı firma, müşterilerine
+        ve sektöre sağladığı katma değerle adından sıkça söz ettireceğinizden emin olabilirsiniz.
+
+      </h4>
+    </div>
+
+
+
+    <div class="p-7 md:p-10 md:px-12 px-5 text-gray-900 container">
+      <h1 class="animate__animated animate__fadeInUp wow text-4xl font-bold">Neden Biz<i
+          class="fa-solid fa-question text-4xl shadow-2xl" style="transform: rotate(10deg);"></i></h1>
+      <section class="animate__animated animate__fadeInUp wow mt-8 mx-4">
+        <h2 class="text-2xl text-gray-800">Vizyonumuz: Ortak Büyüme</h2>
+        <p class="text-gray-600">Müşterilerimizle derin bir güven ve işbirliği içinde hareket ederek, her projede
+          birlikte büyüyoruz. Güven ve işbirliği, ortak vizyonumuzun temel taşlarıdır.</p>
+      </section>
+
+      <section class="animate__animated animate__fadeInUp wow mt-8 mx-4">
+        <h2 class="text-2xl text-gray-800">Hizmetlerimiz: Kalite ve Memnuniyet Odaklı</h2>
+        <p class="text-gray-600">Yüksek kaliteli malzemeler kullanarak ve alanında uzman ekibimizle, projelerinizde
+          sadece yapılar değil, yaşanabilir alanlar inşa ediyoruz. Her adımda müşteri memnuniyetini en ön planda
+          tutuyoruz.</p>
+      </section>
+
+      <section class="animate__animated animate__fadeInUp wow mt-8 mx-4">
+        <h2 class="text-2xl text-gray-800">Ekibimiz: Tecrübe ve Tutkuyla Donatılmış</h2>
+        <p class="text-gray-600">Sadece yetenekli değil, aynı zamanda projelerimize tutkuyla bağlı bir ekibe sahibiz.
+          İnşaat ve dekorasyonun ötesinde, hayallerinizi gerçeğe dönüştürme konusunda deneyimliyiz.</p>
+      </section>
+
+      <section class="animate__animated animate__fadeInUp wow mt-8 mx-4">
+        <h2 class="text-2xl text-gray-800">Müşteri Odaklı Yaklaşımımız</h2>
+        <p class="text-gray-600">Projelerinizi hayata geçirmek, ihtiyaçlarınızı derinlemesine anlamak ve sizi en üst
+          düzeyde memnun etmek için buradayız.</p>
+      </section>
+
+      <section class="animate__animated animate__fadeInUp wow mt-8 mx-4">
+        <h2 class="text-2xl text-gray-800">Hayalinizdeki Mekânlar için</h2>
+        <p class="text-gray-600">Hayalinizdeki evi inşa etmek veya mevcut mekânınızı yenilemek istiyorsanız, bu
+          yolculukta sizinle birlikte olmaya hazırız. Bizimle iletişime geçin, birlikte harikalar yaratalım.</p>
+      </section>
+    </div>
+
+
+    <div class="p-7 md:p-10 md:px-12 px-0 text-gray-700 container md:flex md:gap-6">
+      <div class="flex flex-col container md:w-6/12">
+        <h1 class="animate__animated animate__fadeInUp wow text-4xl font-bold text-gray-700">Misyonumuz</h1>
+        <h4 class="animate__animated animate__fadeInUp wow">Müşterilerimize en yüksek kalitede inşaat ve gayrimenkul
+          hizmetleri sunmayı taahhüt ediyoruz. İnşaat sektöründeki uzmanlığımızı ve deneyimimizi kullanarak, her
+          projemizde mükemmelliği hedefliyoruz. Topluma ve çevreye duyarlı bir yaklaşımla, gelecek nesillere yaşanabilir
+          bir dünya bırakma sorumluluğumuzu da unutmuyoruz.</h4>
+      </div>
+      <div class="flex flex-col container md:w-6/12 md:mt-0 mt-20 ">
+        <h1 class="animate__animated animate__fadeInUp wow text-4xl font-bold text-gray-700">Vizyonumuz</h1>
+        <h4 class="animate__animated animate__fadeInUp wow">İnşaat sektöründe öncü bir marka olmayı hedefliyoruz.
+          Sürekli yenilikçi yaklaşımlarla sektörde fark yaratmayı, teknolojik gelişmeleri yakından takip ederek en ileri
+          teknolojiyi projelerimize entegre etmeyi amaçlıyoruz. Müşterilerimize sadece yapı değil, aynı zamanda yaşam
+          kalitesini artıran çözümler sunarak, sektördeki liderliğimizi sürdürmeyi ve genişletmeyi hedefliyoruz.</h4>
+      </div>
+    </div>
+
+    <div class="mb-20 pb-10 container">
+      <h1 class="animate__animated animate__fadeInUp wow md:text-4xl text-3xl font-bold text-gray-900 text-center"
+        style="text-shadow: 0px 0px  45px rgb(0, 0, 0);">
+        Standardın üzerinde işler ve sürdürülebilir yaşam.</h1>
+      <h2 class="animate__animated animate__fadeInUp wow text-lg font-semibold text-gray-900 text-center my-10">Tüm
+        faaliyetlerimizde çevreye ve topluma karşı duyarlı
+      </h2>
+      <div class="flex justify-center items-center md:flex-row flex-col my-10 gap-10">
+        <div id="box"
+          class="md:flex-row flex-col animate__animated animate__fadeInLeft wow bg-gray-100 text-m md:w-5/12 flex items-center md:h-60 rounded py-3 pl-3 md:pl-0 pr-5 border border-gray-200 hover:shadow border-500">
+          <img class="h-40 p-6" src="icon/clock.png" alt="">
+          <div class="flex items-center justify-center flex-col gap-1">
+            <h1 class="text-xl font-bold">Projelerimizi Vaktinde Teslim Ediyoruz</h1>
+            <p class="text-sm">Atay Yapı, güvenilir ve zamanında teslim prensibiyle hareket eden bir inşaat firmasıdır.
+              Projelerimizi
+              belirlenen tarihlerde müşterilerimize eksiksiz bir şekilde teslim etme taahhüdümüzle öne çıkıyoruz.
+            </p>
+          </div>
+        </div>
+        <div id="box"
+          class="md:flex-row flex-col animate__animated animate__fadeInRight wow bg-gray-100 text-m md:w-5/12 flex items-center md:h-60 rounded py-3 pl-3 md:pl-0 pr-5 border border-gray-200 hover:shadow border-500">
+          <img class="h-40 p-6" src="icon/security.png" alt="">
+          <div class="flex flex-col gap-1">
+            <h1 class="text-xl font-bold">Önce İş Güvenliği</h1>
+            <p class="text-sm">
+              Çalışanlarımıza iş güvenliği ve diğer konularda eğitim vermek ve düzenli denetlemeler yapmak, her koşulda
+              önceliğimizdir. Ayrıca, çalışanlarımızın performanslarını sürekli olarak izleyip ölçüyoruz, böylece daha
+              iyi hizmet sağlamak adına sürekli bir iyileştirme çabası içindeyiz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div
+      class="bg-gray-100 md:rounded w-full md:container mx-auto shadow-xl my-10 py-40 md:py-52 flex justify-center items-center  md:flex-row flex-col md:gap-20 gap-10 bg-cover bg-bottom"
+      style="background-image: url(https://images.pexels.com/photos/176342/pexels-photo-176342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+      <a class="animate__animated animate__fadeInLeft animate__delay wow bg-red-700 rounded shadow hover:shadow-3xl border border-3 border-gray-100 text-gray-100 text-lg hover:text-gray-100 hover:border-gray-100 py-2 px-8 md:py-4 md:px-10 block"
+        href="tel+905306871665"><i class="fa-solid fa-phone"></i> Bizimle iletişime geçin</a>
+      <a class="animate__animated animate__fadeInRight animate__delay wow bg-red-700 rounded shadow hover:shadow-3xl border border-3 border-gray-100 text-gray-100 text-lg hover:text-gray-100 hover:border-gray-100 py-2 px-8 md:py-4 md:px-10 block"
+        href="iletisim/"><i class="fa-solid fa-phone-volume"></i> Biz Sizi Arayalım</a>
+    </div>
+
+
+
+    <div
+      class="hidden p-7 md:p-10 md:px-12 px-5 text-gray-100 container h-96 flex items-center justify-center bg-cover bg-center"
+      style="background-image: url(https://images.pexels.com/photos/1227515/pexels-photo-1227515.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+      <h1 class="animate__animated animate__fadeInUp wow text-6xl font-bold">Neler Yapıyoruz<i
+          class="fa-solid fa-question text-4xl shadow-2xl" style="transform: rotate(10deg);"></i></h1>
+
+      <!--
+          <div class="bg-red-500">
+          <h1 class="animate__animated animate__fadeInUp wow text-4xl font-bold">İç mekan</h1>
+        </div>
+      -->
+    </div>
+
+
+
+    <div id="als" class="bg-cover bg-center mt-10 py-20" style="background-image: url(usta.jpeg);">
+      <div class="md:w-full flex flex-col my-10">
+        <h1 style="font-family: Abril Fatface" , serif; class="container mx-auto text-gray-100 md:text-5xl">Geçmişten
+          Bugüne <span class="font-bold">Atay Yapı</span>
+        </h1>
+        <div class="flex justify-center items-center md:flex-row flex-col gap-10 py-10">
+          <div id="deneyim"
+            class="shadow hover:shadow-inner backdrop-filter backdrop-blur-lg w-80 h-52 md:w-96 md:h-72 counter col-fourth text-gray-50 rounded-lg p-3 flex items-center justify-center flex-col">
+            <p class="text-2xl">Ekip Arkadaşı</p>
+            <div class="flex items-center justify-center gap-1">
+              <h2 class="animate__animated animate__fadeInRight animate__delay wow count text-4xl font-bold">18</h2>
+              <span class="text-xl font-bold">+</span>
+            </div>
+          </div>
+          <div id="deneyim"
+            class="shadow hover:shadow-inner backdrop-filter backdrop-blur-lg w-80 h-52 md:w-96 md:h-72 counter col-fourth text-gray-50 rounded-lg p-3 flex items-center justify-center flex-col">
+            <p class="text-2xl">Yıllık Deneyim</p>
+            <div class="flex items-center justify-center gap-1">
+              <h2 class="animate__animated animate__fadeInRight animate__delay wow count text-4xl font-bold">25</h2>
+              <span class="text-xl font-bold">+</span>
+            </div>
+          </div>
+          <div id="deneyim"
+            class="shadow hover:shadow-inner backdrop-filter backdrop-blur-lg w-80 h-52 md:w-96 md:h-72 counter col-fourth text-gray-50 rounded-lg p-3 flex items-center justify-center flex-col">
+            <p class="text-2xl">Tamamlanan Projeler</p>
+            <div class="flex items-center justify-center gap-1">
+              <h2 class="animate__animated animate__fadeInRight animate__delay wow count text-4xl font-bold">75</h2>
+              <span class="text-xl font-bold">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 4000,
+          ease: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now))
+          }
+        })
+      })
+    </script>
+
+    <div class="my-10 py-10 container flex justify-center items-start gap-20 md:gap-5 md:flex-row flex-col">
+      <div
+        class="animate__animated animate__delay wow animate__backInUp shadow hover:shadow-lg bg-gray-50 container h-72 rounded text-gray-800 text-center py-10 flex flex-col items-center">
+        <div id="iletisim-icon"><i id="iletisim-icon"
+            class="fa-solid fa-phone bg-red-700 shadow-inner shadow-xl text-red-50 rounded-full text-2xl w-16 h-16 flex items-center justify-center"></i>
+        </div>
+        <h2 class="font-bold text-xl">Telefon</h2>
+        <li><a href="tel+905306871665">+90 530 687 16 65</a></li>
+        <li><a href="tel:+905346388826">+90 534 638 88 26</a></li>
+      </div>
+      <div
+        class="animate__animated animate__delay wow animate__backInUp shadow hover:shadow-lg bg-gray-50 container h-72 rounded text-gray-800 text-center py-10 flex flex-col items-center">
+        <div id="iletisim-icon"><i id="iletisim-icon"
+            class="fa-solid fa-envelope bg-red-700 shadow-inner shadow-xl text-red-50 rounded-full text-2xl w-16 h-16 flex items-center justify-center"></i>
+        </div>
+        <h2 class="font-bold text-xl">E- Mail</h2>
+        <li><a href="mailto:ozkanatay296@gmail.com">ozkanatay296@gmail.com</a></li>
+      </div>
+      <div
+        class="animate__animated animate__delay wow animate__backInUp shadow hover:shadow-lg bg-gray-50 container h-72 rounded text-gray-800 text-center py-10 flex flex-col items-center">
+        <div id="iletisim-icon"><i id="iletisim-icon"
+            class="fa-solid fa-location-dot bg-red-700 shadow-inner shadow-xl text-red-50 rounded-full text-2xl w-16 h-16 flex items-center justify-center"></i>
+        </div>
+        <h2 class="font-bold text-xl">Adres ve Kapsam </h2>
+          <li><a href="#">Kocaeli/İzmit</a>
+          <li><a href="#">Kocaeli/Gölcük</a>
+        </li>
+      </div>
+    </div>
+
+    <div style="background-image: url(https:/ /i.hizliresim.com/1ddr2ho.jpg);"
+      class="my-20 mb-40 rounded container relative h-96 bg-cover bg-center animate__animated animate__fadeInUp wow">
+      <h1
+        class="text-gray-100 md:text-3xl text-xl absolute bottom-20 md:bottom-6 md:left-14 left-0 px-2 md:px-0 font-bold">
+        Güvenle inşa edilen her şey, kalıcıdır.</h1>
+    </div>
+
+
+    <!-- <div class="container mx-auto bg-grray-100 py-10 px-3">
+      <h2>Sıkça Sorulan Sorular (SSS)</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">
+              Proje gecikmemesi için ne gibi önlemler alıyorsunuz?
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>
+              Proje gecikmelerini minimize etmek için sürekli olarak iş süreçlerini gözden geçiriyor, sıkı bir takip ve
+              planlama yaparak ilerlemeyi sağlıyoruz. Aynı zamanda, düzenli güncellemeler sunarak şeffaf bir iletişim
+              ortamı oluşturuyor ve olası gecikmelerle başa çıkmak için planlı alternatifler geliştiriyoruz. Bu sayede
+              projenin zamanında ve başarıyla tamamlanması için gereken adımları atmaktan emin oluyoruz.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">
+              İnşaat sürecinin tahmini tamamlanma süresi nedir?
+            </span><span class="icon" aria-hidden="true"></span></button>
+          <div class="accordion-content">
+            <p>İnşaat sürecinin tahmini tamamlanma süresi, projenin boyutuna ve karmaşıklığına bağlı olarak değişir.
+              Ancak, verilen tahmin süresi içinde proje eksiksiz tamamlanır.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div class="bg-gray-50 h-96 flex items-center justify-center">
+      <form class="flex flex-col" id="fs-frm" name="complaint-form" accept-charset="utf-8"
+        action="https://formspree.io/f/mwpebrjl" method="post">
+        <fieldset class="md:container border-none flex flex-col" id="fs-frm-inputs">
+          <div>
+            <h1 class="text-xl text-gray-800 font-bold  gap-2-"><span>
+                Bize İletişim Adresinizi Bırakın, </span>
+              <span class="mr-auto text-xl border-b-2 border-red-500" style="border-style: dashed;">Sizi
+                Arayalım!</span>
+            </h1>
+          </div>
+          <div class="flex items-center justify-center md:flex-row flex-col gap-4">
+            <input class="shadow rounded py-3 px-3 w-full md:w-96" type="text" name="name" id="full-name"
+              placeholder="İsim Soyisim" required style="outline: none;">
+            <input class="shadow rounded py-3 px-3 w-full md:w-96" type="telephone" name="telephone" id="telephone"
+              placeholder="(555) 555-5555" required style="outline: none;">
+          </div>
+          <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+        </fieldset>
+        <input
+          class="shadow-xl text-white rounded-lg p-2 md:p-3 bg-red-600 hover:bg-red-700 font-bold md:mx-5 cursor-pointer"
+          type="submit" value="Gönder">
+      </form>
+    </div>
+
+
+
+  </article>
+  <footer>
+    <div id="footer" class="bg-gray-800 text-white w-full flex p-10  pt-14 gap-4 md:flex-row flex-col">
+      <a href="../index.html"
+        class="tracking-wide md:w-4/12 text-4xl text-center font-bold flex flex-col justify-center items-center">
+        <img class="w-40" src="logo-2.png" alt="logo" title="Atay Yapı">
+        <h1 class="text-xs font-bold">25
+          Yıldan bu güne <br> Daima ileri!</h1>
+      </a>
+
+      <div class="md:w-3/12 md:pr-8">
+        <h1 class="text-3xl font-bold">Biz Kimiz?</h1>
+        <span>
+          Atay Yapı, inşaat sektöründe uzun yıllardır öncü bir konumda bulunuyor. Kaliteli hizmet anlayışı ve deneyimli
+          ekibi sayesinde müşterilerine güven veriyor. Özellikle iç ve dış cephe tamiratlarında uzmanlaşmış olup,
+          estetik ve dayanıklılığı bir arada sağlayarak müşterilerine çözümler sunuyor.</span>
+      </div>
+      <div class="md:w-3/12">
+        <h1 class="text-3xl font-bold">Hızlı Bağlantılar</h1>
+        <li class="hover:text-red-600 text-gray-400"><a href="../galeri/">Galeri <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"></i></li></a>
+        <li class="hover:text-red-600 text-gray-400"><a href="../iletisim">İletişim <i
+              class="fa-solid fa-arrow-up-right-from-square text-xs"></i></li></a>
+      </div>
+      <div class="md:w-3/12 md:ml-4">
+        <h1 class="text-3xl font-bold">İletişim</h1>
+        <li class="hover:text-red-600 text-gray-400"><a href="tel:+905306871665"><i class="fa-solid fa-phone"></i>
+          +90 530 687 16 65 <i class="fa-solid fa-arrow-up-right-from-square text-xs"> </i></li></a>
+        <li class="text-gray-400 ">
+        <li class="hover:text-red-600 text-gray-400"><a href="mailto:ozkanatay296@gmail.com"><i
+              class="fa-regular fa-envelope"></i>
+              ozkanatay296@gmail.com <i class="fa-solid fa-arrow-up-right-from-square text-xs"> </i></li></a>
+        <li class="text-gray-400 ">
+
+
+          <a href="#">
+            <h2 class="font-bold text-xl">Adres ve Kapsam </h2>
+        <li><a href="#">Kocaeli/İzmit</a>
+        <li><a href="#">Kocaeli/Gölcük</a>
+        </li></a>
+
+        <div class="flex mt-4 gap-4">
+          <li><a href="https://wa.me/905306871665"><i class="text-green-600 md:inline hidden md:text-3xl fa-brands fa-whatsapp"></i></a></li>
+          <li><a href="#"><i class="text-red-600 md:inline hidden md:text-3xl fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="text-gray-300 md:inline hidden md:text-3xl fa-brands fa-x-twitter"></i></a></li>
+        </div>
+      </div>
+      <a href="https://wa.me/905306871665">
+        <span
+          class="md:inline hidden fixed bottom-9 right-24 bg-gray-50 text-gray-900 p-1 px-2 rounded-full shadow-inner shadow-2xl animate__animated animate__backInRight animate__delay-3s wow">Size
+          Nasıl Yardımcı olabiliriz?</span>
+        <img class="w-14 fixed bottom-6 right-8  rounded bg-cover bg-center shadow-xl hover:shadow-inner"
+          src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-512.png"
+          alt="">
+      </a>
+      <a class="fixed bottom-8 left-8 flex items-center justify-center bg-red-700 h-12 w-12 rounded-full shadow-2xl"
+        style="box-shadow: 0px 0px 50px rgb(53, 52, 52);" href="#top"><i class="fa-solid fa-arrow-up text-2xl"></i> </a>
+
+    </div>
+
+    <div
+      class="md:pb-0 pb-20 pt-20 bg-gray-800 flex items-center justify-center text-gray-400 p-1 py-3 text-sm font-bold text-center">
+      Copyright © Atay Yapı ve İnşaat 2024. Tüm hakları saklıdır.</div>
+  </footer>
+
+</body>
+<script>
+  // DOM elemanlarını seçme
+  const menu = document.querySelector(".menu");
+  const menuInner = menu.querySelector(".menu__inner");
+  const menuArrow = menu.querySelector(".menu__arrow");
+  const menuTitle = menu.querySelector(".menu__title");
+  const burger = document.querySelector(".burger");
+  const overlay = document.querySelector(".overlay");
+
+  // Navbar Menüsünü Açma/Kapatma Fonksiyonu
+  function toggleMenu() {
+    // "is-active" sınıfını ekleyerek veya kaldırarak menüyü ve örtüyü gösterme/gizleme
+    menu.classList.toggle("is-active");
+    overlay.classList.toggle("is-active");
+  }
+
+  // Mobil Alt Menüyü Gösterme Fonksiyonu
+  function showSubMenu(children) {
+    // Alt menüyü seçme ve animasyon için sınıfları ekleme
+    const subMenu = children.querySelector(".submenu");
+    subMenu.classList.add("is-active");
+    subMenu.style.animation = "slideLeft 0.35s ease forwards";
+
+    // Alt menü içeriğine göre menü başlığını güncelleme
+    const menuTitleContent = children.querySelector("i").parentNode.childNodes[0].textContent;
+    menu.querySelector(".menu__title").textContent = menuTitleContent;
+    menu.querySelector(".menu__header").classList.add("is-active");
+  }
+
+  // Mobil Alt Menüyü Gizleme Fonksiyonu
+  function hideSubMenu() {
+    // Animasyonla alt menüyü gizleme ve sınıfları kaldırma
+    const subMenu = menu.querySelector(".submenu");
+    subMenu.style.animation = "slideRight 0.35s ease forwards";
+    setTimeout(() => {
+      subMenu.classList.remove("is-active");
+    }, 300);
+
+    // Menü başlığını sıfırlama ve ek sınıfları kaldırma
+    menu.querySelector(".menu__title").textContent = "";
+    menu.querySelector(".menu__header").classList.remove("is-active");
+  }
+
+  // Mobil Alt Menüyü Açma/Kapatma Fonksiyonu
+  function toggleSubMenu(e) {
+    // Alt menüyü işlemeden önce menünün aktif olup olmadığını kontrol etme
+    if (!menu.classList.contains("is-active")) {
+      return;
+    }
+
+    // Tıklanan öğenin alt menü açılır menü içinde olup olmadığını kontrol etme
+    if (e.target.closest(".menu__dropdown")) {
+      const children = e.target.closest(".menu__dropdown");
+      showSubMenu(children);
+    }
+  }
+
+
+
+  // Tüm Olay Dinleyicilerini Başlatma
+  // Menü, örtü, alt menü oku, menü başlığı ve iç menü tıklamaları için olay dinleyicilerini eklemek
+  burger.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
+  menuArrow.addEventListener("click", hideSubMenu);
+  menuTitle.addEventListener("click", hideSubMenu);
+  menuInner.addEventListener("click", toggleSubMenu);
+
+</script>
+<script src="wow.min.js"></script>
+<script>
+  new WOW().init();
+  wow = new WOW(
+    {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }
+  )
+  wow.init();
+</script>
+
+</html>
+<script src="script.js"></script>

@@ -1,0 +1,39 @@
+body {
+    background: #000000;
+}
+
+article {
+    margin-top: -9px;
+    background-color: #fff;
+}
+#iletisim-alan input,
+#iletisim-alan textarea {
+    outline: none;
+     background-color: #efefef;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#iletisim-alan input{
+    border-radius: 16px
+}
+#iletisim-alan #gonder {
+    background-color: #DC2625;
+}
+
+#iletisim-alan #gonder:hover {
+    background-color: #e71b1b;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+#iletisim-alan input:focus,
+#iletisim-alan textarea:focus {
+    border-radius: 10px;
+    color: #000000;
+    backdrop-filter: blur(100px);
+}
+
+#btnx a:hover {
+    transform: scale(1.2);
+}
